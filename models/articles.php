@@ -11,8 +11,10 @@ function articles_all(){
 }
 
 function articles_get($id){
-    return ["id"=>1, "title"=>"Выживут только любовники", "date"=>"2019-07-18", "content"=>"Здесь будет статья"];
 
+    $arr = articles_all();
+
+    return $arr[$id];
 }
 
 function articles_new($title, $date, $content){

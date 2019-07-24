@@ -5,5 +5,4 @@
     $article = articles_get($_GET['id']);
 
     include("views/article.php");
-
 ?>
