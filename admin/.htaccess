@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Admin Panel"
+AuthUserFile /var/www/html/blog/my-first-blog.git/admin/.htpasswd
+Require valid-user
