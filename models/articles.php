@@ -25,7 +25,7 @@ function articles_all($link)
 function articles_get($link, $id_article)
 {
     //Запрос
-    $query = $sprintf("SELECT * FROM articles WHERE id=%d",
+    $query = sprintf("SELECT * FROM articles WHERE id=%d",
         (int)$id_article);
     $result = mysqli_query($link, $query);
 
