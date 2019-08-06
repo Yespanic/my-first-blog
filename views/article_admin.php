@@ -10,18 +10,18 @@
 <div class="container">
     <h1>Мой Первый Блог</h1>
     <div>
-        <form method="post" action="index.php?action=<?=$_GET['action']?>&id=<?=$_GET['id']?>">
+        <form method="post" action="../admin/index.php?action=<?=$_GET['action']?>&id=<?=$_GET['id']?>">
             <label>
                 Название
-                <input type="text" name="title" value="<?=$article['title']?>" class="form-item" autofocus required>
+                <input type="text" name="title" value="<?= (isset($article) ? $article['title'] : '') ?>" class="form-item" autofocus required>
             </label>
             <label>
                 Дата
-                <input type="date" name="date" value="<?=$article['date']?>" class="form-item" required>
+                <input type="date" name="date" value="<?= (isset($article) ? $article['date'] : '') ?>" class="form-item" required>
             </label>
             <label>
                 Содержание
-                <textarea class="form-item" name="content" required><?=$article['content']?></textarea>
+                <textarea class="form-item" name="content" required><?= (isset($article) ? $article['content'] : '') ?></textarea>
             </label>
             <input type="submit" value="Сохранить" class="btn">
         </form>
