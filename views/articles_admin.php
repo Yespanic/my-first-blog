@@ -18,15 +18,16 @@
                 <th></th>
                 <th></th>
             </tr>
-            <?php foreach($articles as $a): ?>
+            <?php 
+            foreach($articles as $a): ?>
             <tr>
                 <td><?=$a['date']?></td>
                 <td><?=$a['title']?></td>
                 <td>
-                    <a href="index.php?action=edit&id=<?=$a['id']?>">Редактировать</a>
+                    <a href="../admin/index.php?action=edit&id=<?=$a['id']?>">Редактировать</a>
                 </td>
                 <td>
-                    <a href="index.php?action=delete&id=<?=$a['id']?>">Удалить</a>
+                    <a href="../admin/index.php?action=delete&id=<?=$a['id']?>">Удалить</a>
                 </td>
             </tr>
             <?php endforeach ?>
