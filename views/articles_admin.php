@@ -18,7 +18,8 @@
                 <th></th>
                 <th></th>
             </tr>
-            <?php foreach($articles as $a): ?>
+            <?php 
+            foreach($articles as $a): ?>
             <tr>
                 <td><?=$a['date']?></td>
                 <td><?=$a['title']?></td>

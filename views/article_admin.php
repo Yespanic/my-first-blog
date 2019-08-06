@@ -11,19 +11,39 @@
     <h1>Мой Первый Блог</h1>
     <div>
         <form method="post" action="../admin/index.php?action=<?=$_GET['action']?>&id=<?=$_GET['id']?>">
-            <label>
-                Название
-                <input type="text" name="title" value="<?= (isset($article) ? $article['title'] : '') ?>" class="form-item" autofocus required>
-            </label>
-            <label>
-                Дата
-                <input type="date" name="date" value="<?= (isset($article) ? $article['date'] : '') ?>" class="form-item" required>
-            </label>
-            <label>
-                Содержание
-                <textarea class="form-item" name="content" required><?= (isset($article) ? $article['content'] : '') ?></textarea>
-            </label>
-            <input type="submit" value="Сохранить" class="btn">
+            <div class="row">
+                <div class="col-sm-6">
+                    <label>
+                        Название
+                    </label>
+                </div>
+                <div class="col-sm-6">
+                    <input type="text" name="title" value="<?= (isset($article) ? $article['title'] : '') ?>" class="form-item" autofocus required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label>
+                        Дата
+                    </label>
+                </div>
+                <div class="col-sm-6">
+                    <input type="date" name="date" value="<?= (isset($article) ? $article['date'] : '') ?>" class="form-item" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label>
+                        Содержание
+                    </label>
+                </div>
+                <div class="col-sm-6">
+                    <textarea class="form-item" name="content" required><?= (isset($article) ? $article['content'] : '') ?></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Сохранить" class="btn">
+            </div>
         </form>
     </div>
     <footer>
