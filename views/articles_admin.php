@@ -10,7 +10,7 @@
 <div class="container">
     <h1>Мой Первый Блог</h1>
     <div>
-        <a href="index.php?action=add">Добавить статью</a>
+        <a href="../admin/index.php?action=add">Добавить статью</a>
         <table class="admin-table">
             <tr>
                 <th>Дата</th>
