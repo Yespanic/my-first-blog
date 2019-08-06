@@ -18,16 +18,6 @@
                 <th></th>
                 <th></th>
             </tr>
-            <tr>
-                <td>2019-07-18</td>
-                <td>Заголовок 1</td>
-                <td>
-                    <a href="#">Редактировать</a>
-                </td>
-                <td>
-                    <a href="#">Удалить</a>
-                </td>
-            </tr>
             <?php foreach($articles as $a): ?>
             <tr>
                 <td><?=$a['date']?></td>
